@@ -1,0 +1,14 @@
+.splash {
+  background-color: #28abe3;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.splash-title {
+  color: #fff;
+  margin: auto 10px;
+
+}
