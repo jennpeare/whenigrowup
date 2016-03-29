@@ -22,6 +22,7 @@ html {
 html, body {
   color: #000;
   font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -29,6 +30,6 @@ body {
   min-height: 100vh;
 }
 
-.wrapper {
+.index-wrapper {
   min-height: 100vh;
 }

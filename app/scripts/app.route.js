@@ -8,7 +8,8 @@ angular.module('whenigrowupApp')
   $stateProvider
   .state('/', {
     url: '/',
-    templateUrl: 'views/splash.html'
+    templateUrl: 'views/splash.html',
+    controller: 'SplashCtrl as splash'
   })
 
   // pick your character

@@ -1,6 +1,14 @@
-<div class="splash">
-  <div class="splash-title">
-    <h1>WHEN I GROW UP...</h1>
-    <p><a ui-sref="characters">Pick Character</a></p>
+<div class="splash animate-hide" ng-hide="splash.fade">
+  <div class="container">
+    <span class="splash-title">When I Grow Up...</span>
   </div>
+</div>
+
+<!-- Tommy -->
+<div class="container" ng-show="splash.fade">
+  <h1>PICK A CHARACTER:</h1>
+  <p>Proud Programmer</p>
+  <p>Best Biologist</p>
+  <p>Exciting Engineer</p>
+  <p><a ui-sref="user.dashboard">Let's get started!</a></p>
 </div>
