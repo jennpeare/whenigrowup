@@ -62,3 +62,8 @@ h1.page-header.main {
 h1.page-header.lesson {
   color: #db3340;
 }
+
+/* lesson pages header */
+h2.page-header.lesson {
+  color: #db3340;
+}
