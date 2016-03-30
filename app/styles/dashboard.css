@@ -1,0 +1,55 @@
+/* mobile view */
+.lesson-level  {
+  font-weight: 600;
+  color: #9e9e9e;
+  text-transform: uppercase;
+}
+
+.lesson-title  {
+  /*color: #000;*/
+  color: #db3340;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.lesson-description {
+  color: #000;
+}
+
+.img-badge {
+  box-shadow: 0 0 5px #888;
+  border: 5px solid #fff;
+
+}
+
+.lesson-status {
+  margin-top: 10px;
+}
+
+.lesson-completed .glyphicon-ok {
+  border: 2px solid #5cb85c;
+  border-radius: 100%;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.lesson-completed {
+  color: #5cb85c;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.lesson-status .btn {
+  background-color: #db3340;
+  color: #fff;
+  font-weight: 600;
+  width: 100px;
+}
+
+/* desktop view */
+@media screen and (min-width: 768px) {
+  .lesson-title  {
+    font-size: 24px;
+  }
+}

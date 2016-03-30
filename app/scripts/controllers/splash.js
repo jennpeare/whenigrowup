@@ -9,5 +9,5 @@ angular.module('whenigrowupApp')
     splash.fade = true;
   };
 
-  // $timeout(splash.transition, 2000);
+  $timeout(splash.transition, 2000);
 });

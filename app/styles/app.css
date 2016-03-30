@@ -33,3 +33,32 @@ body {
 .index-wrapper {
   min-height: 100vh;
 }
+
+.user-wrapper {
+  min-height: 100vh;
+  padding-top: 90px;
+  padding-bottom: 55px;
+}
+
+h1.page-header {
+  border-bottom: none;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin: 0 0 15px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+p.page-desc {
+  margin: 0 0 15px;
+}
+
+/* user pages header */
+h1.page-header.main {
+  color: #28abe3;
+}
+
+/* lesson pages header */
+h1.page-header.lesson {
+  color: #db3340;
+}

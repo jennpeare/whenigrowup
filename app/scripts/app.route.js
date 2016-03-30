@@ -27,7 +27,7 @@ angular.module('whenigrowupApp')
   .state('user.dashboard', {
     url: '',
     templateUrl: 'views/user/dashboard.html',
-    controller: 'DashboardCtrl as dashboard'
+    controller: 'ExploreCtrl as explore'
   })
   .state('user.inbox', {
     url: '/inbox',
