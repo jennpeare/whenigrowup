@@ -26,7 +26,8 @@ angular.module('whenigrowupApp')
   })
   .state('user.dashboard', {
     url: '',
-    templateUrl: 'views/user/dashboard.html'
+    templateUrl: 'views/user/dashboard.html',
+    controller: 'DashboardCtrl as dashboard'
   })
   .state('user.inbox', {
     url: '/inbox',
@@ -46,6 +47,10 @@ angular.module('whenigrowupApp')
     abstract: true,
     url: '/lesson',
     templateUrl: 'views/lesson/main.html'
+  })
+  .state('user.lesson.intro', {
+    url: '/intro',
+    templateUrl: 'views/lesson/intro.html'
   })
   .state('user.lesson.variables', {
     url: '/variables',
