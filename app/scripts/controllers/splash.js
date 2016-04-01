@@ -1,7 +1,8 @@
 'use strict';
 
-angular.module('whenigrowupApp')
-.controller('SplashCtrl', function($state, $timeout) {
+var app = angular.module('whenigrowupApp');
+
+app.controller('SplashCtrl', function($state, $timeout) {
   var splash = this;
   splash.fade = false;
 

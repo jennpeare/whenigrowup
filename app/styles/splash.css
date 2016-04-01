@@ -46,3 +46,11 @@
     font-size: 80px;
   }
 }
+
+#myCarousel {
+    height: 100%;
+}
+
+#myCarousel img{
+    margin: 0 auto;
+}
