@@ -3,6 +3,7 @@ light blue: #6dc6ec
 blue: #28abe3
 dark blue: #167ba7
 turqoise: #1fda9a
+dark turqoise: #18a676
 sand: #f7eac8
 yellow: #e8b71a
 red: #db3340
@@ -53,6 +54,11 @@ p.page-desc {
   margin: 0 0 15px;
 }
 
+/* character pick page header */
+h1.page-header.pick-char {
+  color: #18a676;
+}
+
 /* user pages header */
 h1.page-header.main {
   color: #28abe3;
@@ -67,4 +73,3 @@ h1.page-header.lesson {
 h2.page-header.lesson {
   color: #db3340;
 }
-
