@@ -54,10 +54,12 @@ angular.module('whenigrowupApp')
   })
   .state('user.lesson.variables', {
     url: '/variables',
-    templateUrl: 'views/lesson/variables.html'
+    templateUrl: 'views/lesson/variables.html',
+    controller: 'VariablesCtrl as variables'
   })
   .state('user.lesson.history', {
     url: '/history',
-    templateUrl: 'views/lesson/history.html'
+    templateUrl: 'views/lesson/history.html',
+    controller: 'HistoryCtrl as history'
   });
 });

@@ -17,27 +17,44 @@ app.controller('SplashCtrl', function($state, $timeout) {
 
   splash.characters = [
     {
-      name: 'Skye',
       occupation: 'Developer',
-      avatar: '../../images/Developer.png',
+      icon: 'flaticon-developer',
+      color: '#db3340',
       selected: false
     },
     {
-      name: 'Leo',
       occupation: 'Engineer',
-      avatar: '../../images/Engineer.png',
+      icon: 'flaticon-engineer',
+      color: '#18a676',
       selected: false
     },
     {
-      name: 'Jemma',
       occupation: 'Biologist',
-      avatar: '../../images/Biologist.png',
+      icon: 'flaticon-biologist',
+      color: '#e8b71a',
+      selected: false
+    },
+    {
+      occupation: 'Astronaut',
+      icon: 'flaticon-astronaut',
+      color: '#167ba7',
+      selected: false
+    },
+    {
+      occupation: 'Chemist',
+      icon: 'flaticon-chemist',
+      color: '#a295ff',
+      selected: false
+    },
+    {
+      occupation: 'Physicist',
+      icon: 'flaticon-physicist',
+      color: '#ff781f',
       selected: false
     }
   ];
 
   splash.pick = function() {
     splash.characters[0].selected = true;
-    console.log(splash.characters[0]);
   };
 });

@@ -39,8 +39,13 @@ body {
   min-height: 100vh;
 }
 
+.char-pick-wrapper {
+  min-height: 90vh;
+  padding-bottom: 55px;
+}
+
 .user-wrapper {
-  min-height: 100vh;
+  min-height: 90vh;
   padding-top: 90px;
   padding-bottom: 55px;
 }

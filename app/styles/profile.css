@@ -1,0 +1,24 @@
+.profile .avatar {
+  border: 3px solid #db3340;
+  border-radius: 100%;
+  color: #db3340;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px auto 20px;
+  text-align: center;
+}
+
+.profile .avatar.flaticon-developer:before {
+  font-size: 125px;
+}
+
+.profile .occupation {
+  background-color: #db3340;
+  color: #fff;
+  padding: 5px;
+  font-weight: 600;
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
+}

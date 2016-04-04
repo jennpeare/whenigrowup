@@ -37,21 +37,25 @@
 			<img class="img-responsive choice" ng-src="../images/girl.png">
 		</div>
 		<div class="col-xs-6">
-			<a ng-model="collapse" ng-click="collapse = true">
-				<img class="img-responsive choice" ng-class="{ selected : collapse }" ng-src="../images/dog.png">
+			<a ng-model="collapse" ng-click="variables.complete()">
+				<img class="img-responsive choice" ng-class="{ selected : variables.showButton }" ng-src="../images/dog.png">
 			</a>
 		</div>
 	</div>
 </div>
 
-<div class="alert alert-success" role="alert" ng-show="collapse">
-	<p class="bold">Great Job!</p>
-	<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-	<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-	<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-	<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-	<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-	+5 experience points!
+<div class="modal fade" id="variablesModal" role="dialog">
+	<div class="modal-dialog modal-sm">
+		<div class="alert alert-success text-center" role="alert">
+			<h3 class="bold">Great Job! :)</h3>
+			<h4>+50 experience points!</h4>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger" role="progressbar" style="width: 80%;">
+					80/100
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
-<a class="nav-btn btn btn-block" ui-sref="user.dashboard" ng-show="collapse">Complete Lesson</a>
+<a class="nav-btn btn btn-block" ui-sref="user.dashboard" ng-show="variables.showButton">Complete Lesson</a>
