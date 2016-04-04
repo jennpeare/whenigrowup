@@ -31,6 +31,10 @@ body {
   min-height: 100vh;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 .index-wrapper {
   min-height: 100vh;
 }
@@ -66,10 +70,5 @@ h1.page-header.main {
 
 /* lesson pages header */
 h1.page-header.lesson {
-  color: #db3340;
-}
-
-/* lesson pages header */
-h2.page-header.lesson {
   color: #db3340;
 }

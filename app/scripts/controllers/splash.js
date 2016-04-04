@@ -39,6 +39,5 @@ app.controller('SplashCtrl', function($state, $timeout) {
   splash.pick = function() {
     splash.characters[0].selected = true;
     console.log(splash.characters[0]);
-  }
-
+  };
 });

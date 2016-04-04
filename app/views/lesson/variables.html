@@ -1,40 +1,57 @@
 <h1 class="page-header lesson">variables</h1>
 
-<div class="container">
-	You may be familiar with variables from math class.
-	<h2 class = "page-header lesson">x + 1 = 5</h2>
-	In programming, a variable is a name that stores a value or object.<br><br>
+<p>You may be familiar with variables from math class.</p>
+<code class="large">x + 1 = 5</code>
 
-	For example, say we have a variable named x that refers to a dog object.<br>
-	<h2 class = "page-header lesson">x = dog</h2><br><br>
+<p>In programming, a variable is a name that holds information. The information could be numbers, phrases ("strings"), or more complex sets of data ("objects").</p>
+
+<p>Typically, the name of the variable is on the left, following by an equal sign, then followed by the item being assigned to the variable. In the example below, x is assigned to the number 17.</p>
+
+<code class="large">x = 17</code>
+
+<p><code>x</code> now refers to the <code>17</code> and be used to take place of <code>17</code> in all sorts of contexts.</p>
+
+<hr>
+
+<h2 class="section">Quick Quiz!</h2>
+
+<p>We have a variable <code>x</code> that refers to a <code>dog</code> object.</p>
+
+<code class="large">x = dog</code>
+
+<p><strong>Select</strong> the picture that correctly replaces the variable <code>x</code>:</p>
+
+<h4><code>x</code> catches the frisbee.</h4>
+
+<div class="quiz">
+	<div class="row">
+		<div class="col-xs-6">
+			<img class="img-responsive choice" ng-src="../images/cat.png">
+		</div>
+		<div class="col-xs-6">
+			<img class="img-responsive choice" ng-src="../images/trashcan.png">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<img class="img-responsive choice" ng-src="../images/girl.png">
+		</div>
+		<div class="col-xs-6">
+			<a ng-model="collapse" ng-click="collapse = true">
+				<img class="img-responsive choice" ng-class="{ selected : collapse }" ng-src="../images/dog.png">
+			</a>
+		</div>
+	</div>
 </div>
 
-<div class = "container">
-	Select the picture that correctly replaces the variable.<br>
-	<h2 class = "page-header lesson"><u>   x  </u> catches the frisbee.</h2><br>
+<div class="alert alert-success" role="alert" ng-show="collapse">
+	<p class="bold">Great Job!</p>
+	<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+	<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+	<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+	<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+	<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+	+5 experience points!
+</div>
 
-	<div class="slideDown" ng-hide="collapse">
-		<div class = "row">
-			<div class = "column col-xs-6">
-				<img class= "img-responsive" ng-src="../images/cat.png">
-			</div>
-			<div class = "column col-xs-6">
-				<img class= "img-responsive" ng-src="../images/trashcan.png">
-			</div>
-		</div>
-		<div class = "row">
-			<div class = "column col-xs-6">
-				<img class= "img-responsive" ng-src="../images/girl.png">
-			</div>
-			<div class = "column col-xs-6">
-				<a ng-model="collapse" ng-click="collapse=true"><img class= "img-responsive" ng-src="../images/dog.png"></a>
-			</div>
-		</div>
-	</div>
-
-	<div class="lesson-completed pull-right" ng-show="collapse">
-		Great Job! +5 exp!
-	</div>
-</div><br><br>
-
-<p><a ui-sref="user.dashboard">Back</a></p>
+<a class="nav-btn btn btn-block" ui-sref="user.dashboard" ng-show="collapse">Complete Lesson</a>

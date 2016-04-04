@@ -17,9 +17,7 @@
         <div class="lesson-completed pull-right" ng-show="lesson.complete">
           <span class="glyphicon glyphicon-ok"></span> Completed!
         </div>
-        <a ui-sref="user.lesson.{{lesson.route}}">
-          <button type="button" class="btn pull-right" ng-hide="lesson.complete">Start</button>
-        </a>
+        <a class="btn pull-right" ui-sref="user.lesson.{{lesson.route}}" ng-hide="lesson.complete">Start</a>
       </div>
     </div>
   </div>
