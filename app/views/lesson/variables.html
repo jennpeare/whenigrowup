@@ -11,23 +11,29 @@
 
 <div class = "container">
 	Select the picture that correctly replaces the variable.<br>
-	<h2 class = "page-header lesson"><u>  x   </u> catches the frisbee.</h2><br>
+	<h2 class = "page-header lesson"><u>   x  </u> catches the frisbee.</h2><br>
 
-	<div class = "row">
-		<div class = "column col-xs-6">
-			<img class= "img-responsive" ng-src="../images/cat.png">
+	<div class="slideDown" ng-hide="collapse">
+		<div class = "row">
+			<div class = "column col-xs-6">
+				<img class= "img-responsive" ng-src="../images/cat.png">
+			</div>
+			<div class = "column col-xs-6">
+				<img class= "img-responsive" ng-src="../images/trashcan.png">
+			</div>
 		</div>
-		<div class = "column col-xs-6">
-			<img class= "img-responsive" ng-src="../images/trashcan.png">
+		<div class = "row">
+			<div class = "column col-xs-6">
+				<img class= "img-responsive" ng-src="../images/girl.png">
+			</div>
+			<div class = "column col-xs-6">
+				<a ng-model="collapse" ng-click="collapse=true"><img class= "img-responsive" ng-src="../images/dog.png"></a>
+			</div>
 		</div>
 	</div>
-	<div class = "row">
-		<div class = "column col-xs-6">
-			<img class= "img-responsive" ng-src="../images/girl.png">
-		</div>
-		<div class = "column col-xs-6">
-			<img class= "img-responsive" ng-src="../images/dog.png">
-		</div>
+
+	<div class="lesson-completed pull-right" ng-show="collapse">
+		Great Job! +5 exp!
 	</div>
 </div><br><br>
 
