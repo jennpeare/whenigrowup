@@ -1,0 +1,24 @@
+<h1 class="page-header main">Explore</h1>
+<p class="page-desc">Hello there. Are you ready to embark on your adventure? Let's get started!</p>
+<div class="panel panel-default" ng-repeat="lesson in explore.lessons">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        <img class="img-circle img-responsive img-badge" ng-src="{{lesson.img}}"/>
+      </div>
+      <div class="col-md-10 col-sm-10">
+        <p class="lesson-level">{{lesson.header}}</p>
+        <p class="lesson-title">{{lesson.title}}</p>
+        <p class="lesson-description">{{lesson.description}}</p>
+      </div>
+    </div>
+    <div class="row lesson-status">
+      <div class="col-md-12">
+        <div class="lesson-completed pull-right" ng-show="lesson.complete">
+          <span class="glyphicon glyphicon-ok"></span> Completed!
+        </div>
+        <a class="btn pull-right" ui-sref="user.lesson.{{lesson.route}}" ng-hide="lesson.complete">Start</a>
+      </div>
+    </div>
+  </div>
+</div>

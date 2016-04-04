@@ -1,0 +1,35 @@
+<h1 class="page-header lesson">History</h1>
+<p class="page-desc">Explore the depths of this exciting career by diving into the history of <strong>Ada Lovelace</strong>, a profound pioneer of computer science.</p>
+
+<img class="img-responsive" ng-src="images/history-logo.jpg"/><br>
+<p>Ada Lovelace was the world’s first programmer. Now, truth be told, she never wrote code on an actual computer, but that is only because she was programming a hundred years before their existence. It was an important first step in writing computer languages!</p>
+
+<div class="row">
+	<div class="col-xs-4 text-center">
+		<img class="img-responsive" src="images/penguin.png">
+	</div>
+	<div class="col-xs-8">
+		<strong>Fun Fact</strong>
+		<p>Ada dreamed of flying after a disease left her bed-ridden at the age of twelve. She wrote notes on her studies of birds while being trapped in her room.</p>
+	</div>
+</div>
+
+<br/>
+
+<a class="nav-btn btn btn-block" ng-click="history.complete()" ng-hide="history.showButton">Got it!</a>
+<a class="nav-btn btn btn-block" ui-sref="user.dashboard" ng-show="history.showButton">Complete Lesson</a>
+
+<div class="modal fade" id="historyModal" role="dialog">
+	<div class="modal-dialog modal-sm">
+		<div class="alert alert-success text-center" role="alert">
+			<h3 class="bold">Excellent! :D</h3>
+			<h4>+50 experience points!</h4>
+			<h4>Level up! You're now Level 2.</h4>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger" role="progressbar" style="width: 30%;">
+					30/100
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
