@@ -1,10 +1,14 @@
 /* mobile view */
 .splash {
   align-items: center;
+  -webkit-align-items: center;
   background-color: #28abe3;
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
   justify-content: center;
+  -webkit-justify-content: center;
   min-height: 100vh;
   text-align: center;
 }
@@ -58,15 +62,20 @@ height: 30vw;
 }
 
 .characters-wrapper {
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   justify-content: space-between;
+  -webkit-justify-content: space-between;
   margin-bottom: 20px;
 }
 
 .character {
-  flex: 1;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
   text-align: center;
   padding: 15px;
 }
