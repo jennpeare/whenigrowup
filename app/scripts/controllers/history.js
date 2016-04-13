@@ -2,14 +2,14 @@
 
 var app = angular.module('whenigrowupApp');
 
-app.controller('HistoryCtrl', function($state, $timeout) {
+app.controller('HistoryCtrl', function() {
   var history = this;
 
   history.showButton = false;
 
   function reposition() {
     var dialog = $('.modal-dialog');
-    dialog.css("margin-top", Math.max(0, ($(window).height() - dialog.height() - 55) / 2));
+    dialog.css('margin-top', Math.max(0, ($(window).height() - dialog.height() - 55) / 2));
 
     // Reposition when the window is resized
     $(window).on('resize', function() {
